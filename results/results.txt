@@ -1,0 +1,22 @@
+QASPER Answer Quality: GranulQA vs. Baseline
+
+Model 1: LLaMA with GranulQA
+Answer F1 (QASPER): 37.25
+
+Model 2: LLaMA without GranulQA
+Answer F1 (QASPER): 36.5
+
+
+Narrative-Level Evaluation on QASPER: Generation Metrics
+
+Model 1: LLaMA with GranulQA
+ROUGE: 31.2
+BLEU-1: 24.1
+BLEU-4: 6.75
+METEOR: 19.6
+
+Model 2: LLaMA without GranulQA
+ROUGE: 29.85
+BLEU-1: 22.74
+BLEU-4: 6.2
+METEOR: 18.75
