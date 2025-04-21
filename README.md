@@ -3,13 +3,14 @@ GranulQA
 
 GranulQA is a Retrieval-Augmented Question Answering library built on top of RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval). It combines the recursive tree-based indexing of RAPTOR with a lightweight QA pipeline for efficient, context-aware question answering over large documents.
 
-[![Paper page](https://huggingface.co/datasets/huggingface/badges/resolve/main/paper-page-sm.svg)](https://huggingface.co/papers/2401.18059)  [![PapersWithCode SOTA](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/raptor-recursive-abstractive-processing-for/question-answering-on-quality)](https://paperswithcode.com/sota/question-answering-on-quality?p=raptor-recursive-abstractive-processing-for)
+[![Paper page](https://huggingface.co/datasets/huggingface/badges/resolve/main/paper-page-sm.svg)](https://huggingface.co/papers/2401.18059)
 
 ## Prerequisites
 
 - **Python** 3.8 or higher  
 - **Git** 2.x  
-- An OpenAI API key (for default summarization and QA models)  
+- An OpenAI API key (for default summarization and QA models)
+- A Hugging Face API key (for loading models from Hugging Face Hub)  
 - *(Optional)* Jupyter Notebook or JupyterLab for running the demo.
 
 ## Installation
@@ -29,6 +30,11 @@ GranulQA is a Retrieval-Augmented Question Answering library built on top of RAP
 3. **Configure your OpenAI API key**:
    ```bash
    export OPENAI_API_KEY="your-openai-api-key"
+   ```
+   
+4. **Configure your Hugging Face API key**:
+   ```bash
+   export HUGGINGFACE_API_KEY="your-huggingface-api-key"
    ```
 
 ## Basic Usage
