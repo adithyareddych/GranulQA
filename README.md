@@ -36,6 +36,12 @@ GranulQA is a Retrieval-Augmented Question Answering library built on top of RAP
    ```bash
    export HUGGINGFACE_API_KEY="your-huggingface-api-key"
    ```
+   
+## Dataset Used
+
+GranulQA was evaluated and demonstrated using the **NarrativeQA** dataset.  
+You can access it here: [https://huggingface.co/datasets/deepmind/narrativeqa](https://huggingface.co/datasets/deepmind/narrativeqa)
+
 
 ## Basic Usage
 
