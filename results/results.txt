@@ -1,10 +1,10 @@
-QASPER Answer Quality: GranulQA vs. Baseline
+NarrativeQA Answer Quality: GranulQA vs. Baseline
 
 Model 1: LLaMA with GranulQA
-Answer F1 (QASPER): 37.25
+Answer F1 (NarrativeQA): 37.25
 
 Model 2: LLaMA without GranulQA
-Answer F1 (QASPER): 36.5
+Answer F1 (NarrativeQA): 36.5
 
 
 Narrative-Level Evaluation on NarrativeQA: Generation Metrics
