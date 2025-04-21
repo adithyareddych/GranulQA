@@ -22,7 +22,7 @@ class MiniLMEmbeddingModel(BaseEmbeddingModel):
 
 
 class RAPTORLLM:
-    """Drop‑in replacement that adds all seven extensions."""
+    """Drop-in replacement that adds all seven extensions."""
 
     def __init__(self):
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -37,7 +37,7 @@ class RAPTORLLM:
     # ---------- Indexing --------------------------------------------------
     def index_corpus(self, docs: List[str]) -> None:
         cfg_tb = ForgivingCfg(
-            tokenizer            = self.tokenizer,   # ← safer than None
+            tokenizer            = self.tokenizer,   
             max_tokens           = 100,
             num_layers           = 5,
             threshold            = 0.5,
@@ -69,7 +69,7 @@ class RAPTORLLM:
 
     def index_corpus_nqa(self, docs: List[str]) -> None:
         cfg_tb = ForgivingCfg(
-            tokenizer            = self.tokenizer,   # ← safer than None
+            tokenizer            = self.tokenizer,   
             max_tokens           = 100,
             num_layers           = 5,
             threshold            = 0.5,

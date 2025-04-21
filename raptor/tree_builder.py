@@ -1,8 +1,8 @@
 """
-tree_builder.py  – Replaces the original file.
+tree_builder.py  - Replaces the original file.
 
 • Keeps TreeBuilderConfig and TreeBuilder exactly as in your fork.
-• Adds add_leaf() and build_tree() only if they don’t already exist.
+• Adds add_leaf() and build_tree() only if they don't already exist.
   This avoids breaking future upstream updates.
 """
 
@@ -47,19 +47,19 @@ class TreeBuilderConfig:
 
         # ---- basic params --------------------------------------------------
         if max_tokens < 1:
-            raise ValueError("max_tokens must be ≥ 1")
+            raise ValueError("max_tokens must be ≥ 1")
         self.max_tokens = max_tokens
 
         if num_layers < 1:
-            raise ValueError("num_layers must be ≥ 1")
+            raise ValueError("num_layers must be ≥ 1")
         self.num_layers = num_layers
 
         if not (0 <= threshold <= 1):
-            raise ValueError("threshold must be in [0, 1]")
+            raise ValueError("threshold must be in [0, 1]")
         self.threshold = threshold
 
         if top_k < 1:
-            raise ValueError("top_k must be ≥ 1")
+            raise ValueError("top_k must be ≥ 1")
         self.top_k = top_k
 
         if selection_mode not in ("top_k", "threshold"):
@@ -197,9 +197,9 @@ if not hasattr(TreeBuilder, "add_leaf"):
                   summary: str = "", label: str = "") -> int:
         """
         Minimal helper for external pipelines:
-        – stores the text as a leaf Node (ignores summary/label unless you want
+        - stores the text as a leaf Node (ignores summary/label unless you want
           to persist them yourself)
-        – returns its index
+        - returns its index
         """
         if not hasattr(self, "_ext_nodes"):
             self._ext_nodes = {}

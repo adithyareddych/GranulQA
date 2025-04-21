@@ -12,7 +12,7 @@ class Candidate:
 
 class LlamaReranker:
     """
-    Lightweight yes/no relevance check using 7‑B in greedy mode.
+    Lightweight yes/no relevance check using 7-B in greedy mode.
     """
 
     _prompt_tpl = (
