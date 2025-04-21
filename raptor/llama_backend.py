@@ -44,7 +44,7 @@ def get_pipeline(task: str = "text-generation"):
 
 def generate(prompt: str, temperature: float = 0.1) -> str:
     """
-    Generate text with the quantized LLaMA‑2 7B.
+    Generate text with the quantized LLaMA-2 7B.
     """
     pipe = get_pipeline("text-generation")
     out  = pipe(prompt, temperature=temperature, return_full_text=False)

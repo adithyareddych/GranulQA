@@ -26,7 +26,7 @@ def extractive(text: str, k: int = _TOP_K_EXTRACT) -> str:
 def abstractive(text: str, query: Union[str,None] = None) -> str:
     q = f"\nQuestion: {query}\n" if query else ""
     prompt = (
-        f"Summarise the following context{q}concisely in 3‑6 sentences. "
+        f"Summarise the following context{q}concisely in 3-6 sentences. "
         f"Preserve named entities and numbers.\n\nContext:\n{text}\n\nSummary:"
     )
     return generate(prompt).strip()
@@ -38,5 +38,5 @@ def hybrid_summary(text: str, query: Union[str,None] = None) -> str:
 
 
 def headline(text: str) -> str:
-    prompt = f"Write a short, 7‑word title that best describes the topic of this passage:\n\n{text}\n\nTitle:"
+    prompt = f"Write a short, 7-word title that best describes the topic of this passage:\n\n{text}\n\nTitle:"
     return generate(prompt)

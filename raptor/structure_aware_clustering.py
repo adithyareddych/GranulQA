@@ -7,7 +7,7 @@ _HEADING_PATTERN = re.compile(r"^(#+\s|[A-Z][^a-z]{3,})")   # crude markdown / A
 
 def split_on_structure(paragraphs: List[str]) -> List[List[str]]:
     """
-    Group paragraphs by heading markers (markdown '#', ALL‑CAPS lines, digits '.', etc.).
+    Group paragraphs by heading markers (markdown '#', ALL-CAPS lines, digits '.', etc.).
     """
     clusters, current = [], []
     for p in paragraphs:

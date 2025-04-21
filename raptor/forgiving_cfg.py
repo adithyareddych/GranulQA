@@ -2,9 +2,9 @@
 
 class ForgivingCfg:
     """
-    Open‑ended config object.
+    Open-ended config object.
     Any attribute you don't predefine is automatically mapped to None
-    so 3rd‑party code never raises AttributeError.
+    so 3rd-party code never raises AttributeError.
     """
     def __init__(self, **kwargs):
         self.__dict__.update(kwargs)
