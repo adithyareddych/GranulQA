@@ -7,7 +7,7 @@ Model 2: LLaMA without GranulQA
 Answer F1 (QASPER): 36.5
 
 
-Narrative-Level Evaluation on QASPER: Generation Metrics
+Narrative-Level Evaluation on NarrativeQA: Generation Metrics
 
 Model 1: LLaMA with GranulQA
 ROUGE: 31.2
