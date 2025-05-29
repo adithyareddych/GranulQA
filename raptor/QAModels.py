@@ -17,7 +17,7 @@ class BaseQAModel(ABC):
     def answer_question(self, context, question):
         pass
 
-
+#Base QA Model
 class GPT3QAModel(BaseQAModel):
     def __init__(self, model="text-davinci-003"):
         """
